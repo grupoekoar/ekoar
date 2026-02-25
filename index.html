@@ -13,7 +13,7 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
-  <title>Spoken Word - Três Tons Recital de Poesia</title>
+  <title>EkoarSounds - Oficial</title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -26,6 +26,32 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 </head>
+
+<style>
+  @media (max-width: 1220px) {
+      .col {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 0px;
+          max-width: 92%;
+      }
+
+      .dupla {
+          display: flex;
+          width: 100%;
+      }
+      .dupla2 {
+          display: flex;
+          width: 100%;
+      }
+      .uni, .uni2 {
+          padding: 5px;
+      }
+      .imgnone {
+          display: none;
+      }
+  }
+</style>
 
 <body>
   <div class="hero_area">
@@ -66,7 +92,7 @@
           <nav class="navbar navbar-expand-lg custom_nav-container">
             <a class="navbar-brand" href="index.html">
               <span>
-                SpokenWord
+                <img src="images/logo.png" alt="Logo do Site" style="position: absolute; top: 10px;">
               </span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -86,6 +112,9 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="index.html#ingr">Ingressos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="galeria1.html">Galeria</a>
                 </li>
               </ul>
             </div>
@@ -109,7 +138,7 @@
                     <h1>
                       Bem-Vindo(a) <br>
                       <span>
-                        ao Nosso Recital
+                        a Ekoar Sounds
                       </span>
                     </h1>
                     <p  style="text-align: justify;">
@@ -174,8 +203,87 @@
     </div>
   </section>
 
+  <div class="heading_container">
+    <h2 style="margin: auto;">
+      Galeria Ekoar
+    </h2>
+    <br>
+    <br>
+  </div>
   <!-- end about section -->
+  <section class="grid3">
+    <div class="col">
+        <div class="uni">
+            <img src="galeria/1.jpg" alt="" class="imagem-lightbox">
+            
+        </div>
+        <div class="dupla">
+            <div class="uni2">
+                <img src="galeria/3.jpg" alt="" class="imagem-lightbox">
+                
+            </div>
+            <div class="uni2">
+                <img src="galeria/2.jpg" alt="" class="imagem-lightbox">
+                
+            </div>
+        </div>
+    </div>
 
+    <div class="col">
+        <div class="uni">
+            <img src="galeria/IMG-20260116-WA0060.jpg" alt="" class="imagem-lightbox">
+            
+        </div>
+        <div class="uni">
+            <img src="galeria/IMG-20260116-WA0062.jpg" alt="" class="imagem-lightbox">
+            
+        </div>
+        <div class="uni">
+            <img src="galeria/IMG-20260116-WA0068.jpg" alt="" class="imagem-lightbox">
+            
+        </div>
+        <div class="uni">
+            <img src="galeria/IMG-20260116-WA0066.jpg" alt="" class="imagem-lightbox">
+            
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="uni">
+            <img src="galeria/IMG-20260116-WA0079.jpg" alt="" class="imagem-lightbox">
+        </div>
+
+        <div class="dupla2">
+            <div class="uni2">
+                <img src="galeria/IMG-20260116-WA0074.jpg" alt="" class="imagem-lightbox">
+            </div>
+            <div class="uni2 imgnone">
+                <img src="galeria/IMG-20260116-WA0137.jpg" alt="" class="imagem-lightbox">
+            </div>
+            <div class="uni2">
+                <img src="galeria/IMG-20260116-WA0082.jpg" alt="" class="imagem-lightbox">
+            </div>
+        </div>
+        
+        <div class="uni">
+            <img src="galeria/IMG-20260116-WA0141.jpg" alt="" class="imagem-lightbox">
+        </div>
+        </div>
+    </div>
+  </section>
+  <div class="btnbox">
+    <a href="galeria1.html">
+      Ver Mais...
+    </a>
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-conteudo">
+    <img src="" alt="" id="imagem-lightbox">
+    <button class="botao-fechar" id="botao-fechar">X</button>
+    <button class="botao-salvar" id="botao-salvar"><img src="images/download.png" alt=""></button>
+    </div>
+  </div>
   <!-- contact section -->
 
   <section class="contact_section layout_padding" id="ingr">
@@ -187,13 +295,13 @@
     <div class="container">
       <div class="heading_container heading_center">
         <h2>
-          Compre os Seus Ingressos Aqui
+          Te Apresentamos a Spoken Word
         </h2>
       </div>
       <div class="">
         <div class="row">
           <div class="col-md-7 mx-auto">
-            <form method="POST">
+            <form method="POST" style="display: none;">
               <div class="contact_form-container">
                 <div>
                   <div>
@@ -262,7 +370,7 @@
 
   <section class="team_section layout_padding" id="arts">
     <div class="container">
-      <div class="heading_container heading_center">
+      <div class="heading_container heading_center" style="display: none;">
         <h2>
           Nossos Artistas
         </h2>
@@ -275,7 +383,7 @@
       <br>
       <div class="heading_container heading_center">
         <h2>
-          Três Tons
+          Spoken Word(Três Tons)
         </h2>
         <p id="ppp">
 
@@ -567,7 +675,7 @@
     </p>
   </footer>
   <!-- footer section -->
-
+  <script src="script.js"></script>
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/custom.js"></script>
