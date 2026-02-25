@@ -1050,3 +1050,8 @@ background-color: #d4aa2b;
 color: #fff;
 cursor: pointer;
 }
+
+.botao-salvar img {
+  width:20px;
+  height:20px;
+} 
